@@ -1,0 +1,21 @@
+name: Automatic release
+
+on:
+  workflow_dispatch:
+    inputs:
+      Timberborn_version:
+        description: 'Minimum game version required'
+        required: true
+      TimberAPI_version:
+        description: 'TimberAPI version'
+      TimberAPI_example_version:
+        description: 'TimberAPI example version'
+
+
+jobs:
+  printInputs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Log level: ${{ github.event.inputs.Timberborn_version }}"
+          echo "Tags: ${{ github.event.inputs.TimberAPI_version }}"
