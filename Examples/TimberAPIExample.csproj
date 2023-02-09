@@ -5,8 +5,7 @@
         <Description>An example plugin on how to use the TimberAPI</Description>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>9.0</LangVersion>
-        <ReleaseVersion>0.3.1</ReleaseVersion>
-        <ReleaseVersion>0.5.1</ReleaseVersion>
+        <ReleaseVersion>TIMBER_API_EXAMPLE_VERSION</ReleaseVersion>
         <PackageId>TimberAPIExample</PackageId>
         <RootNamespace>TimberAPIExample</RootNamespace>
     </PropertyGroup>
@@ -16,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Timberborn.GameLibs" Version="0.2.8.1-r.0" />
+      <PackageReference Include="Timberborn.GameLibs" Version="0.3.4.3-r.0" />
     </ItemGroup>
 
     <ItemGroup>
